@@ -21,7 +21,7 @@ app.post("/send-message", async (req, res) => {
   const emailUser = process.env.EMAIL_USER;
   const emailPass = process.env.EMAIL_PASS;
 
-  if (!emailUser || !emailPass || emailPass === "hhuz zfod elhy pcub") {
+  if (!emailUser || !emailPass) {
     return res.status(500).json({ success: false, error: "Email not configured. Set EMAIL_USER and EMAIL_PASS in .env" });
   }
 
