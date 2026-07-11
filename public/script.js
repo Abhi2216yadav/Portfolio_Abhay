@@ -167,13 +167,20 @@ window.addEventListener('scroll', () => {
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 
+function setMenuState(isOpen) {
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+}
+
 menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('open');
+  const isOpen = nav.classList.toggle('open');
+  setMenuState(isOpen);
 });
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
+    setMenuState(false);
   });
 });
 

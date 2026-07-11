@@ -74,9 +74,19 @@ nav a:hover::after, nav a.active::after {
 
 .menu-toggle {
   display: none;
+  background: none;
+  border: 0;
   font-size: 1.4rem;
   cursor: pointer;
   color: #fff;
+  line-height: 1;
+  padding: 0;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid #00d2ff;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 section {
