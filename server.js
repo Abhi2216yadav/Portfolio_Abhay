@@ -14,8 +14,11 @@ app.use(express.static(path.join(__dirname, "public")));
 app.post("/send-message", async (req, res) => {
   const { name, email, message } = req.body;
 
-  if (!name || !email || !message) {
+  if (typeof name !== "string" || typeof email !== "string" || typeof message !== "string" || !name.trim() || !email.trim() || !message.trim()) {
     return res.status(400).json({ success: false, error: "All fields are required" });
+  }
+  if (!/^\S+@\S+\.\S+$/.test(email) || name.length > 100 || email.length > 254 || message.length > 5000) {
+    return res.status(400).json({ success: false, error: "Please provide valid contact details" });
   }
 
   const emailUser = process.env.EMAIL_USER;
@@ -32,7 +35,8 @@ app.post("/send-message", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: emailUser,
+      replyTo: email.trim(),
       to: emailUser,
       subject: `Portfolio Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`

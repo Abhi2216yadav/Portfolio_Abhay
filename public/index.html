@@ -1,472 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhay Yadav | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Abhay Yadav — B.Tech CSE student and software developer building practical solutions with web technologies and applied AI.">
+  <meta name="theme-color" content="#071428">
+  <meta property="og:title" content="Abhay Yadav | Software Developer">
+  <meta property="og:description" content="Software developer portfolio of Abhay Yadav.">
+  <meta property="og:image" content="abhay-profile.png">
+  <title>Abhay Yadav | Software Developer</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23071428'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-size='18' font-weight='bold' fill='%2367e8f9'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-
-  <div id="particles-js"></div>
-
-  <header>
-    <div class="logo">&lt;Abhay /&gt;</div>
-    <nav id="primary-nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="Resume.pdf" class="nav-download" download="Abhay-Yadav-Resume.pdf" aria-label="Download Abhay Yadav resume PDF">
-        <i class="fas fa-download" aria-hidden="true"></i> Resume
-      </a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top"><a class="brand" href="#home"
+      aria-label="Abhay Yadav home">AY<span>.</span></a><button class="menu-button" aria-label="Open menu"
+      aria-controls="site-nav" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="#about">About</a><a href="#experience">Experience</a><a
+        href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav><a
+      class="header-resume" href="Resume.pdf" download>Resume <i class="fa-solid fa-arrow-down"></i></a>
   </header>
-
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1>Abhay Yadav</h1>
-      <h3><span class="typewriter"></span></h3>
-      <p class="hero-desc">Engineering student passionate about software development, front-end technologies, and building impactful solutions.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="Resume.pdf" class="btn-resume" download="Abhay-Yadav-Resume.pdf">
-          <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download Resume
-        </a>
-        <a href="#contact" class="btn-secondary">Contact Me</a>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span>Available for opportunities</p>
+        <h1>Hi, I’m <em>Abhay Yadav.</em></h1>
+        <p class="hero-role">B.Tech CSE Student <i></i> Software Developer</p>
+        <p class="hero-summary">Building practical digital solutions through software development, web technologies and
+          applied AI.</p>
+        <div class="actions"><a class="button button-primary" href="#projects">View my projects <i
+              class="fa-solid fa-arrow-right"></i></a><a class="button button-quiet" href="Resume.pdf" download>Download
+            résumé <i class="fa-solid fa-download"></i></a></div>
+        <div class="social-row"><a href="https://github.com/Abhi2216yadav" target="_blank" rel="noreferrer"><i
+              class="fa-brands fa-github"></i>GitHub</a><a href="https://www.linkedin.com/in/abhay-yadav-357425329/"
+            target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a><a href="#contact"><i
+              class="fa-regular fa-envelope"></i>Let’s connect</a></div>
       </div>
-      <div class="hero-socials">
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/abhay-yadav-357425329" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61583984263293" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        <a href="mailto:abhayyadav4402@gmail.com" aria-label="Email Abhay Yadav"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+      <div class="hero-portrait reveal">
+        <div class="portrait-frame"><img src="abhay-profile.png" alt="Abhay Yadav" fetchpriority="high"></div>
+        <div class="portrait-note"><span>01</span>
+          <p>Computer Science<br>Engineering</p>
+        </div>
       </div>
-    </div>
-    <div class="hero-image">
-      <div class="img-wrapper">
-        <img src="abhay-profile.jpeg" alt="Abhay Yadav">
+    </section>
+    <section class="section about" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="section-intro">
+        <h2>A curious builder with a practical mindset.</h2>
+        <p>I am a Computer Science &amp; Engineering student with an interest in software development, web technologies
+          and applied AI. I enjoy turning ideas into useful experiences, learning through hands-on work, and
+          collaborating in hackathons and student communities. My foundation spans programming, databases and modern web
+          development—and I’m continuously strengthening it through projects and problem solving.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2 class="section-title">About <span>Me</span></h2>
-    <div class="about-container">
-      <div class="about-text">
-        <p>I am an engineering student passionate about software development, with a growing interest in front-end technologies like HTML, CSS, and JavaScript. I'm also familiar with programming in C, C++, and Python, and have a basic understanding of data structures and algorithms.</p>
-        <p>I'm eager to apply my skills through internships and hands-on projects, and I'm excited to keep learning and growing in the field of technology.</p>
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-num" data-target="14">0</span>
-            <p>Projects</p>
+      <div class="facts">
+        <div><strong>2024—2028</strong><span>B.Tech CSE · MAKAUT</span></div>
+        <div><strong>8.51</strong><span>CGPA through Semester 3</span></div>
+        <div><strong>2</strong><span>Completed virtual internships</span></div>
+        <div><strong>SIH ’25</strong><span>Hardware Grand Finale</span></div>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <div class="section-label">02 / Education</div>
+      <div class="timeline">
+        <article><span>2024—2028</span>
+          <div>
+            <h3>B.Tech · Computer Science &amp; Engineering</h3>
+            <p>Abacus Institute of Engineering &amp; Management · MAKAUT</p><small>CGPA: 8.51 through Semester 3</small>
           </div>
-          <div class="stat">
-            <span class="stat-num" data-target="5">0</span>
-            <p>Certifications</p>
+        </article>
+        <article><span>2023</span>
+          <div>
+            <h3>Intermediate</h3>
+            <p>Krishak I C</p><small>88.8%</small>
           </div>
-          <div class="stat">
-            <span class="stat-num" data-target="4">0</span>
-            <p>Achievements</p>
+        </article>
+        <article><span>2021</span>
+          <div>
+            <h3>High School</h3>
+            <p>Janki Devi K I C</p><small>80%</small>
           </div>
+        </article>
+      </div>
+    </section>
+    <section class="section skills" id="skills">
+      <div class="section-label">03 / Technical skills</div>
+      <h2>Tools I’m learning and using.</h2>
+      <div class="skill-grid">
+        <article>
+          <h3>Programming</h3>
+          <p>Python · Java · C · C++ · JavaScript</p>
+        </article>
+        <article>
+          <h3>Frontend</h3>
+          <p>HTML · CSS · React</p>
+        </article>
+        <article>
+          <h3>Backend</h3>
+          <p>FastAPI · Django · Node.js · Express.js</p>
+        </article>
+        <article>
+          <h3>Data</h3>
+          <p>MySQL · SQL · MongoDB · Firebase</p>
+        </article>
+        <article>
+          <h3>AI &amp; related</h3>
+          <p>LangChain · Pydantic · OpenCV · YOLO · Google Cloud · Vertex AI</p>
+        </article>
+        <article>
+          <h3>Tools</h3>
+          <p>Git · GitHub · VS Code</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="section-label">04 / Experience</div>
+      <h2>Learning in real-world settings.</h2>
+      <div class="experience-list">
+        <article>
+          <div><span class="status completed">Completed</span>
+            <h3>Python Full Stack Virtual Internship</h3>
+            <p>AICTE EduSkills</p>
+          </div><time>Jan—Mar 2026<br>10 weeks</time>
+        </article>
+        <article>
+          <div><span class="status completed">Completed</span>
+            <h3>SQL &amp; Database Management Systems Virtual Internship</h3>
+            <p>AICTE EduSkills</p>
+          </div><time>Jun—Aug 2026<br>8 weeks</time>
+        </article>
+        <article>
+          <div><span class="status ongoing">Selected / Ongoing</span>
+            <h3>Entrepreneurship &amp; Startup Development</h3>
+            <p>AICTE EduSkills</p>
+          </div><time>Oct—Dec 2026</time>
+        </article>
+        <article>
+          <div><span class="status community">Community</span>
+            <h3>Student Mentor</h3>
+            <p>JNV Nadia, Kalyani · Supporting and guiding students in their learning journey.</p>
+          </div><time>Mentoring</time>
+        </article>
+      </div>
+    </section>
+    <section class="section projects" id="projects">
+      <div class="section-label">05 / Selected work</div>
+      <div class="project-heading">
+        <h2>Projects with purpose.</h2>
+        <p>Project summaries below are limited to work that can be described confidently from the supplied portfolio
+          material.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual meetup">
+            <div class="browser"><span></span><span></span><span></span></div>
+            <div class="network-lines"></div><i class="fa-solid fa-people-arrows"></i><b>meeT uP</b><small>Connect ·
+              Converse · Grow</small>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker">PROXEC 4.0 · 3rd Position</div>
+            <h3>meeT uP</h3>
+            <p>A web-based networking platform designed to help people connect, build professional relationships and
+              communicate.</p>
+            <p class="contribution"><b>Contribution:</b> Presented the project at PROXEC 4.0 with Team Charismatic.</p>
+            <div class="tags"><span>Web platform</span><span>Networking</span></div><a
+              href="https://github.com/Abhi2216yadav" target="_blank" rel="noreferrer">GitHub profile <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual skills-visual">
+            <div class="browser"><span></span><span></span><span></span></div><i
+              class="fa-solid fa-calendar-check"></i><b>SkillConnection</b><small>Find services with clarity</small>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker">Service discovery</div>
+            <h3>SkillConnection</h3>
+            <p>A web-based service booking platform connecting customers with service providers and simplifying service
+              discovery and booking.</p>
+            <p class="contribution"><b>Contribution:</b> Built as a service-platform project.</p>
+            <div class="tags"><span>Web platform</span><span>Service booking</span></div><a
+              href="https://github.com/Abhi2216yadav" target="_blank" rel="noreferrer">GitHub profile <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+      </div>
+      <p class="project-note">Repository-specific stacks and live links will be added when their source repositories are
+        publicly verified.</p>
+    </section>
+    <section class="section" id="achievements">
+      <div class="section-label">06 / Recognition</div>
+      <h2>Achievements &amp; leadership.</h2>
+      <div class="achievement-grid">
+        <article><i class="fa-solid fa-trophy"></i><span>AIEM Internal Hackathon 2026</span>
+          <h3>1st Position</h3>
+          <p>Software Category · Team Leader, Team Charismatic</p>
+        </article>
+        <article><i class="fa-solid fa-microchip"></i><span>Smart India Hackathon 2025</span>
+          <h3>Grand Finale</h3>
+          <p>Hardware Edition · Problem Statement 25047</p>
+        </article>
+        <article><i class="fa-solid fa-medal"></i><span>PROXEC 4.0</span>
+          <h3>3rd Position</h3>
+          <p>meeT uP</p>
+        </article>
+        <article><i class="fa-solid fa-people-group"></i><span>Leadership</span>
+          <h3>Campus &amp; event roles</h3>
+          <p>Campus Ambassador, BECon ’26 · Assistant Event Coordinator &amp; Project Presenter, INNOVARENA ’26</p>
+        </article>
+      </div>
+      <div class="coding">
+        <div><span>LeetCode</span><strong>242</strong>
+          <p>problems solved · 100 Days Badge 2026</p>
+        </div>
+        <div><span>GeeksforGeeks</span><strong>339</strong>
+          <p>problems solved</p>
+        </div>
+        <div><span>CodeChef</span><strong>50</strong>
+          <p>problems · Problem Solver Bronze Badge</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <h2 class="section-title">My <span>Education</span></h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>B.Tech in Computer Science & Engineering</h3>
-          <span class="institute">Abacus Institute of Engineering and Management</span>
-          <p class="year">Present</p>
-          <p>Average 8.51 CGPA (1st to 3rd Semester). Building a strong foundation in software development and computer science.</p>
-        </div>
+    </section>
+    <section class="section certifications" id="certifications">
+      <div class="section-label">07 / Credentials</div>
+      <h2>Selected certifications.</h2>
+      <div class="cert-grid"><a href="Oracle-certificate.pdf" target="_blank"><i
+            class="fa-solid fa-cloud"></i><span>Oracle Cloud Infrastructure 2025 AI Foundations Associate</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="C-certificate.pdf" target="_blank"><i
+            class="fa-solid fa-c"></i><span>NPTEL · Problem Solving through Programming in C · 67%</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="Python-certificate.pdf" target="_blank"><i
+            class="fa-brands fa-python"></i><span>Skill India · Python Programming</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="AI-ML-internship.pdf" target="_blank"><i
+            class="fa-solid fa-chart-line"></i><span>Tata · GenAI Powered Data Analytics Job Simulation ·
+            Forage</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <div class="cert-pending"><i class="fa-brands fa-aws"></i><span>AWS Solutions Architecture Job Simulation ·
+            Forage</span><small>Verification link to be added</small></div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>Intermediate (XII)</h3>
-          <span class="institute">KRISHAK I C</span>
-          <p class="year">2021 - 2023</p>
-          <p>Completed higher secondary education with 88.8%.</p>
-        </div>
+    </section>
+    <section class="section profiles" id="profiles">
+      <div class="section-label">08 / Online profiles</div>
+      <h2>Find me where I learn and build.</h2>
+      <div class="profile-links"><a href="https://github.com/Abhi2216yadav" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-github"></i><span>GitHub</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a
+          href="https://www.linkedin.com/in/abhay-yadav-357425329/" target="_blank" rel="noreferrer"><i
+            class="fa-brands fa-linkedin"></i><span>LinkedIn</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://leetcode.com/u/abhi2216yadav/"
+          target="_blank" rel="noreferrer"><i class="fa-solid fa-code"></i><span>LeetCode</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a><a
+          href="https://www.geeksforgeeks.org/profile/abhay1htzt?tab=activity" target="_blank" rel="noreferrer"><i
+            class="fa-solid fa-laptop-code"></i><span>GeeksforGeeks</span><i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+    </section>
+    <section class="contact" id="contact">
+      <div>
+        <p class="section-label">09 / Contact</p>
+        <h2>Let’s build something thoughtful.</h2>
+        <p>I’m always open to discussing opportunities, collaborative projects and ideas.</p><a class="email-link"
+          href="mailto:abhayyadav4402@gmail.com">abhayyadav4402@gmail.com <i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <p class="contact-meta">Chinsurah, West Bengal · <a href="tel:+919161564246">+91 9161564246</a></p>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <h3>High School (X)</h3>
-          <span class="institute">JANKI DEVI K I C</span>
-          <p class="year">2021</p>
-          <p>Completed secondary education with 80%.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <h2 class="section-title">My <span>Skills</span></h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <i class="fab fa-html5"></i>
-        <h3>HTML</h3>
-        <div class="progress"><div style="width:0%" data-width="90%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-css3-alt"></i>
-        <h3>CSS</h3>
-        <div class="progress"><div style="width:0%" data-width="85%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-js"></i>
-        <h3>JavaScript</h3>
-        <div class="progress"><div style="width:0%" data-width="80%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-code"></i>
-        <h3>C Programming</h3>
-        <div class="progress"><div style="width:0%" data-width="85%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-code"></i>
-        <h3>C++</h3>
-        <div class="progress"><div style="width:0%" data-width="75%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fab fa-python"></i>
-        <h3>Python</h3>
-        <div class="progress"><div style="width:0%" data-width="80%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-project-diagram"></i>
-        <h3>DSA</h3>
-        <div class="progress"><div style="width:0%" data-width="70%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <div class="progress"><div style="width:0%" data-width="75%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-users"></i>
-        <h3>Leadership</h3>
-        <div class="progress"><div style="width:0%" data-width="85%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Problem Solving</h3>
-        <div class="progress"><div style="width:0%" data-width="80%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-comments"></i>
-        <h3>Communication</h3>
-        <div class="progress"><div style="width:0%" data-width="75%"></div></div>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-rocket"></i>
-        <h3>Innovation</h3>
-        <div class="progress"><div style="width:0%" data-width="80%"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="achievements" class="section">
-    <h2 class="section-title">Achievements & <span>Certifications</span></h2>
-    <div class="achievements-grid">
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
-        <h3>Smart India Hackathon 2025</h3>
-        <p class="achievement-detail">Hardware Edition – Grand Finale</p>
-        <p>Participated at GIET University, Gunupur, Odisha (Dec 8-12, 2025). Problem Statement ID: 25047.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
-        <h3>PROXEC 4.0 – 3rd Position</h3>
-        <p class="achievement-detail">Science Project & Exhibition</p>
-        <p>Secured 3rd Position at Abacus Institute of Engineering and Management. Presented "meeT uP" – a smart networking platform.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
-        <h3>Campus Ambassador – BECon '26</h3>
-        <p class="achievement-detail">IIT Delhi</p>
-        <p>Served as Campus Ambassador for the Annual Business & Entrepreneurship Conclave organized by EDC IIT Delhi.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-users-cog"></i></div>
-        <h3>Assistant Event Coordinator</h3>
-        <p class="achievement-detail">INNOVATEARENA'26</p>
-        <p>Assistant Event Coordinator & Project Presenter for Frontend Web Development Competition organized by AIEM & YantraYodha Community.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-laptop"></i></div>
-        <h3>Virtual Internship</h3>
-        <p class="achievement-detail"> AI-ML Virtual Internship</p>
-        <p>I have successfully completed a 10-week AI-ML Virtual Internship
-           conducted under the AICTE – Eduskills initiative, supported by Google 
-           for Developers, during October–December 2025.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-laptop"></i></div>
-        <h3>Virtual Internship</h3>
-        <p class="achievement-detail">Python Fullstack Development</p>
-        <p>I have successfully completed the 10-Week Virtual Internship in Python Full Stack Development offered
-           by EduSkills Academy in collaboration with AICTE.</p>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon"><i class="fas fa-laptop"></i></div>
-        <h3>Virtual Internship</h3>
-        <p class="achievement-detail">Generative AI</p>
-        <p> I have successfully completed the 8-Week Generative AI Virtual Internship organized by EduSkills,
-           in collaboration with AICTE, the National Internship Portal, and Google Cloud..</p>
-      </div>
-    </div>
-
-    <h3 class="sub-section-title">Certifications</h3>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <i class="fab fa-python"></i>
-        <div>
-          <h4>Python Programming</h4>
-          <p>Skill India – Reliance Foundation Skilling Academy</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <i class="fas fa-c"></i>
-        <div>
-          <h4>Problem Solving through Programming in C</h4>
-          <p>NPTEL – 67% (Jul-Oct 2025, 12-week course)</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <i class="fas fa-cloud"></i>
-        <div>
-          <h4>OCI 2025 AI Foundations Associate</h4>
-          <p>Oracle Cloud Infrastructure – Aug 31, 2025</p>
-        </div>
-      </div>
-      <div class="cert-card">
-        <i class="fas fa-robot"></i>
-        <div>
-          <h4>GenAI Powered Data Analytics</h4>
-          <p>Tata – Forage Job Simulation (2026)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2 class="section-title">My <span>Projects</span></h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-handshake"></i></div>
-        <h3>meeT uP</h3>
-        <p>Smart networking & chatting platform for event meetups and professional connections.</p>
-        <div class="project-tags">
-          <span>Web Dev</span><span>Networking</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View meeT uP code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-concierge-bell"></i></div>
-        <h3>SkillConnection</h3>
-        <p>Service booking platform connecting skilled professionals with clients.</p>
-        <div class="project-tags">
-          <span>Web Dev</span><span>Full Stack</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View SkillConnection code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
-        <h3>Currency Converter</h3>
-        <p>Real-time currency conversion tool with up-to-date exchange rates.</p>
-        <div class="project-tags">
-          <span>JavaScript</span><span>API</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Currency Converter code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
-        <h3>Tic-Tac-Toe Game</h3>
-        <p>Interactive multiplayer tic-tac-toe game with clean UI.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Tic-Tac-Toe Game code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-tasks"></i></div>
-        <h3>To-Do List Application</h3>
-        <p>Daily task manager with add, edit, delete, and mark-as-done functionality.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav/To-do--list" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View To-Do List Application code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-hand-scissors"></i></div>
-        <h3>Rock-Paper-Scissors</h3>
-        <p>Fun interactive rock-paper-scissors game against the computer.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Rock-Paper-Scissors code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-calculator"></i></div>
-        <h3>Basic Calculator</h3>
-        <p>Arithmetic calculation system with a clean and responsive interface.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav/Basic_Calculator-Project.git" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Basic Calculator code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-university"></i></div>
-        <h3>ATM Machine Simulation</h3>
-        <p>Simulates ATM operations including balance check, withdrawal, and deposit using C.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View ATM Machine Simulation code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-utensils"></i></div>
-        <h3>Online Food Delivery System</h3>
-        <p>Food ordering system with menu management and order tracking.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Online Food Delivery System code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-music"></i></div>
-        <h3>Music Playlist Management</h3>
-        <p>System to manage, organize, and play music playlists efficiently.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Music Playlist Management code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-hospital"></i></div>
-        <h3>Hospital Patient Priority</h3>
-        <p>Priority-based patient management system for hospital emergency triage.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Hospital Patient Priority code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-train"></i></div>
-        <h3>Railway Ticket Cancellation</h3>
-        <p>System to manage railway ticket cancellations and refunds.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Railway Ticket Cancellation code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-history"></i></div>
-        <h3>Browser History Management</h3>
-        <p>Manages browser history with navigation and search features using DSA.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Browser History Management code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-      <div class="project-card">
-        <div class="project-icon"><i class="fas fa-search"></i></div>
-        <h3>Student Roll Number Search</h3>
-        <p>Efficient search system to look up student records by roll number.</p>
-        <div class="project-tags">
-          <span>C</span><span>DSA</span>
-        </div>
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Student Roll Number Search code on GitHub">
-          <i class="fab fa-github" aria-hidden="true"></i> View Code
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h2 class="section-title">Get In <span>Touch</span></h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div><h4>Email</h4><p>abhayyadav4402@gmail.com</p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div><h4>Location</h4><p>Adisaptagram, Chinsurah, West Bengal</p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <div><h4>Phone</h4><p>+91 9161564246</p></div>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-globe"></i>
-          <div><h4>Languages</h4><p>English, Hindi</p></div>
-        </div>
-      </div>
-      <form id="contactForm">
-        <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" aria-label="Your name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" aria-label="Your email" required>
-        <textarea id="message" name="message" placeholder="Your Message" aria-label="Your message" required></textarea>
-        <button type="submit">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+      <form id="contactForm" novalidate><label for="name">Your name</label><input id="name" name="name"
+          autocomplete="name" required><label for="email">Email address</label><input id="email" name="email"
+          type="email" autocomplete="email" required><label for="message">Message</label><textarea id="message"
+          name="message" required></textarea><button class="button button-primary" type="submit">Send message <i
+            class="fa-solid fa-arrow-right"></i></button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
       </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-logo">&lt;Abhay /&gt;</div>
-      <div class="footer-socials">
-        <a href="https://github.com/Abhi2216yadav" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/abhay-yadav-357425329" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61583984263293" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        <a href="mailto:abhayyadav4402@gmail.com" aria-label="Email Abhay Yadav"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-      </div>
-      <p>&copy; 2025 Abhay Yadav. All rights reserved.</p>
-    </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top">AY<span>.</span></a>
+    <p>© 2026 Abhay Yadav. Built with intention.</p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
