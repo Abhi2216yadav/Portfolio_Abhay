@@ -33,6 +33,7 @@
   </header>
   <main id="main">
     <section class="hero" id="home">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span>Available for opportunities</p>
@@ -66,8 +67,8 @@
       </div>
       <div class="facts">
         <div><strong>2024—2028</strong><span>B.Tech CSE · MAKAUT</span></div>
-        <div><strong>8.51</strong><span>CGPA through Semester 3</span></div>
-        <div><strong>2</strong><span>Completed virtual internships</span></div>
+        <div><strong data-count="8.51">8.51</strong><span>CGPA through Semester 3</span></div>
+        <div><strong data-count="2">2</strong><span>Completed virtual internships</span></div>
         <div><strong>SIH ’25</strong><span>Hardware Grand Finale</span></div>
       </div>
     </section>
@@ -215,19 +216,29 @@
           <h3>3rd Position</h3>
           <p>meeT uP</p>
         </article>
+        
         <article><i class="fa-solid fa-people-group"></i><span>Leadership</span>
           <h3>Campus &amp; event roles</h3>
-          <p>Campus Ambassador, BECon ’26 · Assistant Event Coordinator &amp; Project Presenter, INNOVARENA ’26</p>
+          <p>Campus Ambassador of IIT Delhi, BECon ’26 · </p>
         </article>
+        <article><i class="fa-solid fa-people-group"></i><span>Leadership</span>
+          <h3>Campus &amp; event roles</h3>
+          <p>Assistant Event Coordinator &amp; Project Presenter, INNOVARENA ’26</p>
+        </article>
+        <article><i class="fa-solid fa-people-group"></i><span>Mentorship</span>
+          <h3>Campus &amp; event roles</h3>
+          <p>Student teck fest mentor at JNV Nadia, Kalyani.</p>
+        </article>
+ 
       </div>
       <div class="coding">
-        <div><span>LeetCode</span><strong>242</strong>
+        <div><span>LeetCode</span><strong data-count="242">242</strong>
           <p>problems solved · 100 Days Badge 2026</p>
         </div>
-        <div><span>GeeksforGeeks</span><strong>339</strong>
+        <div><span>GeeksforGeeks</span><strong data-count="339">339</strong>
           <p>problems solved</p>
         </div>
-        <div><span>CodeChef</span><strong>50</strong>
+        <div><span>CodeChef</span><strong data-count="50">50</strong>
           <p>problems · Problem Solver Bronze Badge</p>
         </div>
       </div>
@@ -284,7 +295,11 @@
   <footer><a class="brand" href="#top">AY<span>.</span></a>
     <p>© 2026 Abhay Yadav. Built with intention.</p><a href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
   </footer>
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="three-scene.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>

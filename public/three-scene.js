@@ -6,7 +6,7 @@
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isMobile = window.innerWidth < 768;
 
-  let renderer, scene, camera, orb, orbWire, points, mouseX = 0, mouseY = 0, raf;
+  let renderer, scene, camera, orb, orbWire, points, mouseX = 0, mouseY = 0, raf, paused = false;
 
   function init() {
     scene = new THREE.Scene();
@@ -121,6 +121,7 @@
 
   function animate() {
     raf = requestAnimationFrame(animate);
+    if (paused) return;
 
     orb.rotation.y += 0.004;
     orb.rotation.x += 0.0012;
@@ -146,6 +147,11 @@
   } catch (err) {
     canvas.style.display = "none";
   }
+
+  document.addEventListener("visibilitychange", function () {
+    paused = document.hidden;
+    if (!paused && renderer && scene && camera) renderer.render(scene, camera);
+  });
 
   window.addEventListener("pagehide", function () {
     if (raf) cancelAnimationFrame(raf);
